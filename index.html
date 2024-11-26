@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mystery number</title>
+</head>
+<body>
+    <h1>Mystery number</h1>
+    
+    <div class="timerDisplay"></div>
+    
+    <div class="intro">
+        <p>C'est le moment de deviner le nombre mystère. </p>
+    <label for="difficulty">Choisissez un niveau de difficulté :</label>
+    <select id="difficulty">
+        <option value="easy">Facile (3 essais, 1-10)</option>
+        <option value="medium">Moyen (2 essais, 1-50)</option>
+        <option value="hard">Difficile (1 essai, 1-100)</option>
+    </select>
+    </div>
+
+
+    <p id="difficultyRange"> Entrer un nombre entre 1 et 10</p>
+
+    <div class="form">
+        <label for="guessField">Entrer un chiffre: </label>
+        <input type="number" min="1" max="10" required id="guessField" class="guessField">
+        <input type="submit" value="Test" class="guessSubmit">
+        <p class="remainingGuesses">Nombre d'essais restants : 3 </p>
+    </div>
+
+    
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+    
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
